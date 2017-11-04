@@ -1,0 +1,15 @@
+{
+    "name": "Quentin Le Bian",
+    "company": "PilotaWeb",
+    "email": "quentin.lebian@pilotaweb.fr",
+    "access_key": "dcb58b9b5616ec547b25f205561cea6f",
+    "account": "free",
+    "my_request":"10",
+    "max_request":"1000",
+    "source_currency":"USD",
+    "format": "1",
+    "refresh_day": "10",
+    "begin_date":"2017-11-01",
+    "end_date":"2017-11-30",
+    "last_log": "2017-11-04 11:33:06 AM"
+}
