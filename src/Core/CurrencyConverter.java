@@ -10,8 +10,8 @@
  * @About:              You're welcome to hack and code as your are each of theses sources files <3:p|--<;
  * @Filename:           CurrencyConverter.java
  * @Date:               2017-11-04T12:59:19+01:00
- * @Last modified by:   quentpilot
- * @Last modified time: 2017-11-04T17:14:37+01:00
+ * @Last modified by:   quentin
+ * @Last modified time: 2017-11-05T01:40:09+01:00
  * @License:            MIT
  * @See:                projects.quentinlebian.fr/LiveCurrencyConverter
  */
@@ -19,6 +19,7 @@
 
 package src.Core;
 
+import src.Settings.Install.Installer;
 import src.Reader.Reader;
 import src.Parser.Parser;
 import src.Computer.Computer;
@@ -42,11 +43,12 @@ public class CurrencyConverter {
 			/**
 			** CURRENT UNIT TESTS
 			*/
+			Installer 					i = new Installer(); // To check and set some data
 			Reader              r = new Reader(); // To read STDIN
 			Parser              p = new Parser(); // To Parse JSON files
 			Computer            Albert = new Computer(); // To compute like a computer
 			Converter           c = new Converter(); // To converter currencies data
-			LiveConverter       l = new LiveConverter(false); // To converter currencies data from online API
+			LiveConverter       l = new LiveConverter(false); // To converter currencies data from online API (or not)
 
 			while (r.getRunning()) {
 					System.out.print("[ Enter a value to compute currencies ]\n> ");
